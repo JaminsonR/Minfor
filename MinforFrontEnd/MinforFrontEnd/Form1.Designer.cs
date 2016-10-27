@@ -1,6 +1,6 @@
 ﻿namespace MinforFrontEnd
 {
-    partial class Login
+    partial class frmLogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblInicioSesion = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ptrLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUsername
             // 
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtUsername.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.txtUsername.Location = new System.Drawing.Point(233, 213);
@@ -49,7 +50,7 @@
             this.txtUsername.Size = new System.Drawing.Size(167, 23);
             this.txtUsername.TabIndex = 0;
             this.txtUsername.Text = "   Nombre de Usuario";
-            this.txtUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtUsername.Enter += new System.EventHandler(this.txtUsername_Enter);
             // 
             // txtPassword
             // 
@@ -61,6 +62,7 @@
             this.txtPassword.Size = new System.Drawing.Size(167, 23);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Text = "   Contraseña";
+            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             // 
             // btnLogin
             // 
@@ -92,36 +94,37 @@
             this.lblInicioSesion.Text = "Inicio Sesión";
             this.lblInicioSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
+            // ptrLogo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(178, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 148);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.ptrLogo.BackColor = System.Drawing.Color.Transparent;
+            this.ptrLogo.Image = ((System.Drawing.Image)(resources.GetObject("ptrLogo.Image")));
+            this.ptrLogo.Location = new System.Drawing.Point(178, 21);
+            this.ptrLogo.Name = "ptrLogo";
+            this.ptrLogo.Size = new System.Drawing.Size(244, 148);
+            this.ptrLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrLogo.TabIndex = 6;
+            this.ptrLogo.TabStop = false;
+            this.ptrLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Login
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(613, 472);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ptrLogo);
             this.Controls.Add(this.lblInicioSesion);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
-            this.Name = "Login";
+            this.Name = "frmLogin";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ptrLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +136,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblInicioSesion;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptrLogo;
     }
 }
 

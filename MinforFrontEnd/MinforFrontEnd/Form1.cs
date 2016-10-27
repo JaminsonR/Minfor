@@ -10,26 +10,46 @@ using System.Windows.Forms;
 
 namespace MinforFrontEnd
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtUsername_Enter(object sender, EventArgs e)
+        {
+            txtUsername.Clear();
+        }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            txtPassword.Clear();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            ptrLogo.Focus();
+        }
+
+        private void txtUsername_Click(object sender, EventArgs e)
+        {
+            txtUsername.Enabled = true;
+        }
+
+        private void txtUsername_MouseEnter(object sender, EventArgs e)
+        {
+            txtUsername.Enabled = true;
+        }
+
+        private void txtUsername_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtUsername.Enabled = true;
         }
     }
 }
