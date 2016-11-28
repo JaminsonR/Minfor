@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace MinforFrontEnd
 {
-    public partial class FrmIngresoCliente : Form
+    public partial class MostrarVentas : Form
     {
-        public FrmIngresoCliente()
+        public MostrarVentas()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void FrmIngresoCliente_Load(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
 
         }
