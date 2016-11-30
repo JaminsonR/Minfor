@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarArticulo.Designer.cs">
+      <DependentUpon>AgregarArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarCliente.Designer.cs">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,22 +71,55 @@
     <Compile Include="FrmIngresoCliente.Designer.cs">
       <DependentUpon>FrmIngresoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="MostrarVentas.cs">
+    <Compile Include="FrmGenerarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MostrarVentas.Designer.cs">
-      <DependentUpon>MostrarVentas.cs</DependentUpon>
+    <Compile Include="FrmGenerarFactura.Designer.cs">
+      <DependentUpon>FrmGenerarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarCliente.Designer.cs">
+      <DependentUpon>FrmModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarProducto.Designer.cs">
+      <DependentUpon>FrmModificarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarVentas.Designer.cs">
+      <DependentUpon>FrmMostrarVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarArticulo.resx">
+      <DependentUpon>AgregarArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCliente.resx">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIngresoCliente.resx">
       <DependentUpon>FrmIngresoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MostrarVentas.resx">
-      <DependentUpon>MostrarVentas.cs</DependentUpon>
+    <EmbeddedResource Include="FrmGenerarFactura.resx">
+      <DependentUpon>FrmGenerarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarCliente.resx">
+      <DependentUpon>FrmModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarProducto.resx">
+      <DependentUpon>FrmModificarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarVentas.resx">
+      <DependentUpon>FrmMostrarVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

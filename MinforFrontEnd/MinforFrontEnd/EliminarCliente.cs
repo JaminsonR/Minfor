@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MinforFrontEnd
 {
-    public partial class MostrarVentas : Form
+    public partial class EliminarCliente : Form
     {
-        public MostrarVentas()
+        public EliminarCliente()
         {
             InitializeComponent();
         }
@@ -22,12 +22,17 @@ namespace MinforFrontEnd
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
