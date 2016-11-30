@@ -59,6 +59,30 @@
     <Compile Include="EliminarCliente.Designer.cs">
       <DependentUpon>EliminarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEliminarArticulo1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarArticulo1.Designer.cs">
+      <DependentUpon>FrmEliminarArticulo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarEmpleado.Designer.cs">
+      <DependentUpon>FrmEliminarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngresarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresarEmpleado.Designer.cs">
+      <DependentUpon>FrmIngresarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInventario.Designer.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +107,12 @@
     <Compile Include="FrmModificarCliente.Designer.cs">
       <DependentUpon>FrmModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModificarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarEmpleado.Designer.cs">
+      <DependentUpon>FrmModificarEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmModificarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,8 +133,20 @@
     <EmbeddedResource Include="EliminarCliente.resx">
       <DependentUpon>EliminarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarArticulo1.resx">
+      <DependentUpon>FrmEliminarArticulo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarEmpleado.resx">
+      <DependentUpon>FrmEliminarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresarEmpleado.resx">
+      <DependentUpon>FrmIngresarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIngresoCliente.resx">
       <DependentUpon>FrmIngresoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInventario.resx">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -114,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificarCliente.resx">
       <DependentUpon>FrmModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarEmpleado.resx">
+      <DependentUpon>FrmModificarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificarProducto.resx">
       <DependentUpon>FrmModificarProducto.cs</DependentUpon>

@@ -42,6 +42,7 @@
             this.lblCedula = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -122,6 +123,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(544, 100);
@@ -129,7 +131,7 @@
             // 
             // txtId_Cliente
             // 
-            this.txtId_Cliente.Location = new System.Drawing.Point(316, 56);
+            this.txtId_Cliente.Location = new System.Drawing.Point(316, 125);
             this.txtId_Cliente.Name = "txtId_Cliente";
             this.txtId_Cliente.Size = new System.Drawing.Size(200, 22);
             this.txtId_Cliente.TabIndex = 6;
@@ -137,7 +139,7 @@
             // lblCedula
             // 
             this.lblCedula.AutoSize = true;
-            this.lblCedula.Location = new System.Drawing.Point(118, 61);
+            this.lblCedula.Location = new System.Drawing.Point(118, 130);
             this.lblCedula.Name = "lblCedula";
             this.lblCedula.Size = new System.Drawing.Size(196, 17);
             this.lblCedula.TabIndex = 5;
@@ -145,7 +147,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(556, 49);
+            this.button1.Location = new System.Drawing.Point(556, 118);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 29);
             this.button1.TabIndex = 7;
@@ -163,11 +165,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(280, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(276, 25);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Busque al cliente a eliminar";
+            // 
             // EliminarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 682);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtId_Cliente);
@@ -200,5 +213,6 @@
         private System.Windows.Forms.Label lblCedula;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
     }
 }
