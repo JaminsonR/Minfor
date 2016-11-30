@@ -31,5 +31,10 @@ namespace MinforFrontEnd
         {
 
         }
+
+        private void FrmGenerarFactura_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

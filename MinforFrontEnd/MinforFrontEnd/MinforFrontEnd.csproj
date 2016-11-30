@@ -53,11 +53,11 @@
     <Compile Include="AgregarArticulo.Designer.cs">
       <DependentUpon>AgregarArticulo.cs</DependentUpon>
     </Compile>
-    <Compile Include="EliminarCliente.cs">
+    <Compile Include="FrmEliminarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EliminarCliente.Designer.cs">
-      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    <Compile Include="FrmEliminarCliente.Designer.cs">
+      <DependentUpon>FrmEliminarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEliminarArticulo1.cs">
       <SubType>Form</SubType>
@@ -125,13 +125,19 @@
     <Compile Include="FrmMostrarVentas.Designer.cs">
       <DependentUpon>FrmMostrarVentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVentanaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentanaPrincipal.Designer.cs">
+      <DependentUpon>FrmVentanaPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AgregarArticulo.resx">
       <DependentUpon>AgregarArticulo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EliminarCliente.resx">
-      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="FrmEliminarCliente.resx">
+      <DependentUpon>FrmEliminarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEliminarArticulo1.resx">
       <DependentUpon>FrmEliminarArticulo1.cs</DependentUpon>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarVentas.resx">
       <DependentUpon>FrmMostrarVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentanaPrincipal.resx">
+      <DependentUpon>FrmVentanaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

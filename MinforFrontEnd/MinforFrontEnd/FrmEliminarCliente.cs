@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MinforFrontEnd
 {
-    public partial class EliminarCliente : Form
+    public partial class FrmEliminarCliente : Form
     {
-        public EliminarCliente()
+        public FrmEliminarCliente()
         {
             InitializeComponent();
         }
