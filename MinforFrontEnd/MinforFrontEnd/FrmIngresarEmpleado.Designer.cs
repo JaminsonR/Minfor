@@ -291,7 +291,7 @@
             this.Controls.Add(this.lblIntrucciones);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmIngresarEmpleado";
-            this.Text = "FrmIngresarEmpleado";
+            this.Text = "Ingresar Empleado";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -40,6 +40,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtDireccionCliente = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
@@ -53,9 +56,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -190,6 +190,45 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Seleccione una opcion:";
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Transparent;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Location = new System.Drawing.Point(512, 395);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(166, 53);
+            this.button14.TabIndex = 16;
+            this.button14.Text = "Eliminar Cargo";
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Transparent;
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Location = new System.Drawing.Point(300, 395);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(166, 53);
+            this.button15.TabIndex = 15;
+            this.button15.Text = "Modificar Cargo";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.Transparent;
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Location = new System.Drawing.Point(70, 397);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(166, 53);
+            this.button16.TabIndex = 14;
+            this.button16.Text = "Crear Nuevo Cargo";
+            this.button16.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
@@ -360,54 +399,15 @@
             this.button1.Text = "Generar Factura";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.Transparent;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(512, 395);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(166, 53);
-            this.button14.TabIndex = 16;
-            this.button14.Text = "Eliminar Cargo";
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.Transparent;
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(300, 395);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(166, 53);
-            this.button15.TabIndex = 15;
-            this.button15.Text = "Modificar Cargo";
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.Transparent;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(70, 397);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(166, 53);
-            this.button16.TabIndex = 14;
-            this.button16.Text = "Crear Nuevo Cargo";
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // FrmVentanaPrincipal
+            // FrmVentanaPrincipalAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(880, 718);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmVentanaPrincipal";
-            this.Text = "FrmVentanaPrincipal";
+            this.Name = "FrmVentanaPrincipalAdmin";
+            this.Text = "Ventana Principal";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

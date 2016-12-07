@@ -193,7 +193,7 @@
             this.Descuento.Name = "Descuento";
             this.Descuento.ReadOnly = true;
             // 
-            // FrmEliminarArticulo1
+            // FrmEliminarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -205,8 +205,8 @@
             this.Controls.Add(this.lblCedula);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmEliminarArticulo1";
-            this.Text = "FrmEliminarArticulo1";
+            this.Name = "FrmEliminarArticulo";
+            this.Text = "Eliminar Articulo";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

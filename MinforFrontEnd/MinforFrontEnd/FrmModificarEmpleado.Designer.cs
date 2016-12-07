@@ -59,6 +59,7 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -121,7 +122,6 @@
             this.txtCedula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCedula.Location = new System.Drawing.Point(288, 157);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.ReadOnly = true;
             this.txtCedula.Size = new System.Drawing.Size(338, 22);
             this.txtCedula.TabIndex = 98;
             // 
@@ -358,11 +358,22 @@
             this.comboBox1.Size = new System.Drawing.Size(339, 24);
             this.comboBox1.TabIndex = 119;
             // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.Location = new System.Drawing.Point(661, 149);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(130, 36);
+            this.button3.TabIndex = 120;
+            this.button3.Text = "Buscar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // FrmModificarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(975, 670);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button13);
@@ -395,7 +406,7 @@
             this.Controls.Add(this.lblIntrucciones);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmModificarEmpleado";
-            this.Text = "FrmModificarEmpleado";
+            this.Text = "Modificar Empleado";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,5 +443,6 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button3;
     }
 }

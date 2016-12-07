@@ -202,7 +202,7 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmIngresoCliente";
-            this.Text = "frmIngresoCliente";
+            this.Text = "Ingreso Cliente";
             this.Load += new System.EventHandler(this.FrmIngresoCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModificarProducto));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -52,6 +53,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -173,9 +175,9 @@
             this.txtNombres.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombres.Location = new System.Drawing.Point(330, 181);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.ReadOnly = true;
             this.txtNombres.Size = new System.Drawing.Size(338, 22);
             this.txtNombres.TabIndex = 51;
+            this.txtNombres.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblEmail
             // 
@@ -290,11 +292,22 @@
             this.button10.Text = "Editar Campo";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // ModificarProducto
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button4.Location = new System.Drawing.Point(699, 168);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(130, 36);
+            this.button4.TabIndex = 71;
+            this.button4.Text = "Buscar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // FrmModificarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1059, 659);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -319,8 +332,9 @@
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.lblNombres);
             this.Controls.Add(this.lblIntrucciones);
-            this.Name = "ModificarProducto";
-            this.Text = "ModificarProducto";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FrmModificarProducto";
+            this.Text = "Modificar Producto";
             this.Load += new System.EventHandler(this.ModificarProducto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -353,5 +367,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button4;
     }
 }

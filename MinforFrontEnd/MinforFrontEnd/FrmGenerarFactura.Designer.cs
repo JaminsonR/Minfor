@@ -31,6 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGenerarFactura));
             this.lblCedula = new System.Windows.Forms.Label();
             this.dgvItemsVendidos = new System.Windows.Forms.DataGridView();
+            this.id_Articulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtId_Cliente = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -44,11 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.id_Articulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemsVendidos)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -77,6 +77,34 @@
             this.dgvItemsVendidos.RowTemplate.Height = 24;
             this.dgvItemsVendidos.Size = new System.Drawing.Size(728, 367);
             this.dgvItemsVendidos.TabIndex = 3;
+            // 
+            // id_Articulo
+            // 
+            this.id_Articulo.HeaderText = "Id Articulo";
+            this.id_Articulo.Name = "id_Articulo";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripción";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio Unitario";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "Importe";
+            this.Importe.Name = "Importe";
+            this.Importe.ReadOnly = true;
             // 
             // txtId_Cliente
             // 
@@ -196,34 +224,6 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Cajero:";
             // 
-            // id_Articulo
-            // 
-            this.id_Articulo.HeaderText = "Id Articulo";
-            this.id_Articulo.Name = "id_Articulo";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripción";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio Unitario";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Importe
-            // 
-            this.Importe.HeaderText = "Importe";
-            this.Importe.Name = "Importe";
-            this.Importe.ReadOnly = true;
-            // 
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -254,7 +254,7 @@
             this.Controls.Add(this.lblCedula);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmGenerarFactura";
-            this.Text = "GenerarFactura";
+            this.Text = "Generar Factura";
             this.Load += new System.EventHandler(this.FrmGenerarFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemsVendidos)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);

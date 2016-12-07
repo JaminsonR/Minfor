@@ -221,7 +221,7 @@
             this.txtNombres.Size = new System.Drawing.Size(338, 22);
             this.txtNombres.TabIndex = 64;
             // 
-            // AgregarArticulo
+            // FrmAgregarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -245,8 +245,8 @@
             this.Controls.Add(this.lblNombres);
             this.Controls.Add(this.lblIntrucciones);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "AgregarArticulo";
-            this.Text = "AgregarArticulo";
+            this.Name = "FrmAgregarArticulo";
+            this.Text = "Agregar Articulo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

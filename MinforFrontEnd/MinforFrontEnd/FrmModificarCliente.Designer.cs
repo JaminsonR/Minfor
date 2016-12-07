@@ -111,9 +111,8 @@
             // txtCedula
             // 
             this.txtCedula.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtCedula.Location = new System.Drawing.Point(301, 248);
+            this.txtCedula.Location = new System.Drawing.Point(301, 164);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.ReadOnly = true;
             this.txtCedula.Size = new System.Drawing.Size(338, 22);
             this.txtCedula.TabIndex = 21;
             // 
@@ -130,7 +129,7 @@
             // txtNombres
             // 
             this.txtNombres.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtNombres.Location = new System.Drawing.Point(300, 164);
+            this.txtNombres.Location = new System.Drawing.Point(300, 248);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.ReadOnly = true;
             this.txtNombres.Size = new System.Drawing.Size(338, 22);
@@ -150,7 +149,7 @@
             // 
             this.lblCedula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCedula.AutoSize = true;
-            this.lblCedula.Location = new System.Drawing.Point(225, 253);
+            this.lblCedula.Location = new System.Drawing.Point(225, 169);
             this.lblCedula.Name = "lblCedula";
             this.lblCedula.Size = new System.Drawing.Size(56, 17);
             this.lblCedula.TabIndex = 17;
@@ -170,7 +169,7 @@
             // 
             this.lblNombres.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNombres.AutoSize = true;
-            this.lblNombres.Location = new System.Drawing.Point(225, 169);
+            this.lblNombres.Location = new System.Drawing.Point(225, 253);
             this.lblNombres.Name = "lblNombres";
             this.lblNombres.Size = new System.Drawing.Size(69, 17);
             this.lblNombres.TabIndex = 15;
@@ -213,11 +212,11 @@
             // button7
             // 
             this.button7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button7.Location = new System.Drawing.Point(661, 234);
+            this.button7.Location = new System.Drawing.Point(661, 150);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(130, 36);
             this.button7.TabIndex = 73;
-            this.button7.Text = "Editar Campo";
+            this.button7.Text = "Buscar";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -233,14 +232,14 @@
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.Location = new System.Drawing.Point(661, 150);
+            this.button5.Location = new System.Drawing.Point(661, 234);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(130, 36);
             this.button5.TabIndex = 71;
             this.button5.Text = "Editar Campo";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // ModificarCliente
+            // FrmModificarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -265,8 +264,8 @@
             this.Controls.Add(this.lblNombres);
             this.Controls.Add(this.lblIntrucciones);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "ModificarCliente";
-            this.Text = "ModificarCliente";
+            this.Name = "FrmModificarCliente";
+            this.Text = "Modificar Cliente";
             this.ResumeLayout(false);
             this.PerformLayout();
 
