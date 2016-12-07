@@ -16,7 +16,9 @@ namespace MinforFrontEnd
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmVentanaPrincipal());
+            Application.Run(new FrmIngresoNuevoCargo());
+            Application.Run(new FrmEliminarCargo());
+            Application.Run(new FrmModificarCargo());
         }
     }
 }

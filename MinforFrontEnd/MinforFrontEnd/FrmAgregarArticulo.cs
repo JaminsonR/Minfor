@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace MinforFrontEnd
 {
-    public partial class FrmVentanaPrincipal : Form
+    public partial class FrmAgregarArticulo : Form
     {
-        public FrmVentanaPrincipal()
+        public FrmAgregarArticulo()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void lblCedula_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDireccion_Click(object sender, EventArgs e)
         {
 
         }

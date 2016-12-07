@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MinforFrontEnd
 {
-    public partial class FrmEliminarArticulo1 : Form
+    public partial class FrmIngresoNuevoCargo : Form
     {
-        public FrmEliminarArticulo1()
+        public FrmIngresoNuevoCargo()
         {
             InitializeComponent();
         }

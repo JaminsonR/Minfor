@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace MinforFrontEnd
 {
-    public partial class AgregarArticulo : Form
+    public partial class FrmModificarCargo : Form
     {
-        public AgregarArticulo()
+        public FrmModificarCargo()
         {
             InitializeComponent();
         }
 
-        private void lblCedula_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDireccion_Click(object sender, EventArgs e)
+        private void FrmModificarCargo_Load(object sender, EventArgs e)
         {
 
         }
