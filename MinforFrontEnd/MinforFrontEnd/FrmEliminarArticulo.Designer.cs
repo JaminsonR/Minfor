@@ -46,6 +46,7 @@
             this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -65,7 +66,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(245, 541);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(485, 59);
+            this.button2.Size = new System.Drawing.Size(205, 59);
             this.button2.TabIndex = 19;
             this.button2.Text = "Borrar";
             this.button2.UseVisualStyleBackColor = true;
@@ -193,11 +194,23 @@
             this.Descuento.Name = "Descuento";
             this.Descuento.ReadOnly = true;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnCancelar.Location = new System.Drawing.Point(521, 541);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(205, 59);
+            this.btnCancelar.TabIndex = 41;
+            this.btnCancelar.Text = "Listo";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
             // FrmEliminarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 664);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -235,5 +248,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descuento;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
