@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModificarEmpleado));
             this.label4 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtFechaInicio = new System.Windows.Forms.TextBox();
             this.txtRUC = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -60,6 +59,7 @@
             this.btnEditFechaInicio = new System.Windows.Forms.Button();
             this.cbbCargo = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label4
@@ -80,15 +80,6 @@
             this.txtTelefono.ReadOnly = true;
             this.txtTelefono.Size = new System.Drawing.Size(338, 22);
             this.txtTelefono.TabIndex = 103;
-            // 
-            // txtFechaInicio
-            // 
-            this.txtFechaInicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtFechaInicio.Location = new System.Drawing.Point(288, 409);
-            this.txtFechaInicio.Name = "txtFechaInicio";
-            this.txtFechaInicio.ReadOnly = true;
-            this.txtFechaInicio.Size = new System.Drawing.Size(338, 22);
-            this.txtFechaInicio.TabIndex = 102;
             // 
             // txtRUC
             // 
@@ -133,6 +124,7 @@
             this.txtApellidos.ReadOnly = true;
             this.txtApellidos.Size = new System.Drawing.Size(338, 22);
             this.txtApellidos.TabIndex = 97;
+            this.txtApellidos.TextChanged += new System.EventHandler(this.txtApellidos_TextChanged);
             // 
             // txtNombres
             // 
@@ -276,6 +268,7 @@
             this.btnEditRuc.TabIndex = 114;
             this.btnEditRuc.Text = "Editar Campo";
             this.btnEditRuc.UseVisualStyleBackColor = true;
+            this.btnEditRuc.Click += new System.EventHandler(this.btnEditRuc_Click);
             // 
             // btnEditDireccion
             // 
@@ -286,6 +279,7 @@
             this.btnEditDireccion.TabIndex = 113;
             this.btnEditDireccion.Text = "Editar Campo";
             this.btnEditDireccion.UseVisualStyleBackColor = true;
+            this.btnEditDireccion.Click += new System.EventHandler(this.btnEditDireccion_Click);
             // 
             // btnEditMail
             // 
@@ -296,6 +290,7 @@
             this.btnEditMail.TabIndex = 112;
             this.btnEditMail.Text = "Editar Campo";
             this.btnEditMail.UseVisualStyleBackColor = true;
+            this.btnEditMail.Click += new System.EventHandler(this.btnEditMail_Click);
             // 
             // btnEditApellidos
             // 
@@ -317,6 +312,7 @@
             this.btnEditNombres.TabIndex = 109;
             this.btnEditNombres.Text = "Editar Campo";
             this.btnEditNombres.UseVisualStyleBackColor = true;
+            this.btnEditNombres.Click += new System.EventHandler(this.btnEditNombres_Click);
             // 
             // btnEditCargo
             // 
@@ -327,6 +323,7 @@
             this.btnEditCargo.TabIndex = 118;
             this.btnEditCargo.Text = "Editar Campo";
             this.btnEditCargo.UseVisualStyleBackColor = true;
+            this.btnEditCargo.Click += new System.EventHandler(this.btnEditCargo_Click);
             // 
             // btnEditTelefono
             // 
@@ -337,6 +334,7 @@
             this.btnEditTelefono.TabIndex = 117;
             this.btnEditTelefono.Text = "Editar Campo";
             this.btnEditTelefono.UseVisualStyleBackColor = true;
+            this.btnEditTelefono.Click += new System.EventHandler(this.btnEditTelefono_Click);
             // 
             // btnEditFechaInicio
             // 
@@ -347,6 +345,7 @@
             this.btnEditFechaInicio.TabIndex = 116;
             this.btnEditFechaInicio.Text = "Editar Campo";
             this.btnEditFechaInicio.UseVisualStyleBackColor = true;
+            this.btnEditFechaInicio.Click += new System.EventHandler(this.btnEditFechaInicio_Click);
             // 
             // cbbCargo
             // 
@@ -370,11 +369,22 @@
             this.button3.Text = "Buscar";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // dtpFechaInicio
+            // 
+            this.dtpFechaInicio.Enabled = false;
+            this.dtpFechaInicio.Location = new System.Drawing.Point(286, 409);
+            this.dtpFechaInicio.Name = "dtpFechaInicio";
+            this.dtpFechaInicio.Size = new System.Drawing.Size(340, 22);
+            this.dtpFechaInicio.TabIndex = 121;
+            this.dtpFechaInicio.Value = new System.DateTime(2017, 1, 5, 0, 0, 35, 0);
+            this.dtpFechaInicio.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // FrmModificarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(975, 670);
+            this.Controls.Add(this.dtpFechaInicio);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.cbbCargo);
             this.Controls.Add(this.btnEditCargo);
@@ -390,7 +400,6 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTelefono);
-            this.Controls.Add(this.txtFechaInicio);
             this.Controls.Add(this.txtRUC);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtEmail);
@@ -417,7 +426,6 @@
         #endregion
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtFechaInicio;
         private System.Windows.Forms.TextBox txtRUC;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtEmail;
@@ -446,5 +454,6 @@
         private System.Windows.Forms.Button btnEditFechaInicio;
         private System.Windows.Forms.ComboBox cbbCargo;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker dtpFechaInicio;
     }
 }
