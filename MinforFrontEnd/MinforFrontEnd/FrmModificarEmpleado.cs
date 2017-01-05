@@ -16,5 +16,10 @@ namespace MinforFrontEnd
         {
             InitializeComponent();
         }
+
+        private void btnEditApellidos_Click(object sender, EventArgs e)
+        {
+            txtApellidos.Enabled = true;
+        }
     }
 }

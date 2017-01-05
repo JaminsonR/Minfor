@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModificarEmpleado));
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtFechaInicio = new System.Windows.Forms.TextBox();
+            this.txtRUC = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtCedula = new System.Windows.Forms.TextBox();
@@ -47,18 +47,18 @@
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblNombres = new System.Windows.Forms.Label();
             this.lblIntrucciones = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnEditRuc = new System.Windows.Forms.Button();
+            this.btnEditDireccion = new System.Windows.Forms.Button();
+            this.btnEditMail = new System.Windows.Forms.Button();
+            this.btnEditApellidos = new System.Windows.Forms.Button();
+            this.btnEditNombres = new System.Windows.Forms.Button();
+            this.btnEditCargo = new System.Windows.Forms.Button();
+            this.btnEditTelefono = new System.Windows.Forms.Button();
+            this.btnEditFechaInicio = new System.Windows.Forms.Button();
+            this.cbbCargo = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -72,32 +72,32 @@
             this.label4.TabIndex = 104;
             this.label4.Text = "Cargo:";
             // 
-            // textBox2
+            // txtTelefono
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Location = new System.Drawing.Point(287, 451);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(338, 22);
-            this.textBox2.TabIndex = 103;
+            this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTelefono.Location = new System.Drawing.Point(287, 451);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.ReadOnly = true;
+            this.txtTelefono.Size = new System.Drawing.Size(338, 22);
+            this.txtTelefono.TabIndex = 103;
             // 
-            // textBox3
+            // txtFechaInicio
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox3.Location = new System.Drawing.Point(288, 409);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(338, 22);
-            this.textBox3.TabIndex = 102;
+            this.txtFechaInicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtFechaInicio.Location = new System.Drawing.Point(288, 409);
+            this.txtFechaInicio.Name = "txtFechaInicio";
+            this.txtFechaInicio.ReadOnly = true;
+            this.txtFechaInicio.Size = new System.Drawing.Size(338, 22);
+            this.txtFechaInicio.TabIndex = 102;
             // 
-            // textBox4
+            // txtRUC
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox4.Location = new System.Drawing.Point(287, 367);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(338, 22);
-            this.textBox4.TabIndex = 101;
+            this.txtRUC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtRUC.Location = new System.Drawing.Point(287, 367);
+            this.txtRUC.Name = "txtRUC";
+            this.txtRUC.ReadOnly = true;
+            this.txtRUC.Size = new System.Drawing.Size(338, 22);
+            this.txtRUC.TabIndex = 101;
             // 
             // txtDireccion
             // 
@@ -236,26 +236,26 @@
             this.lblIntrucciones.Text = "Modifique los datos del empleado";
             this.lblIntrucciones.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
+            // btnClear
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.Location = new System.Drawing.Point(546, 573);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 36);
-            this.button1.TabIndex = 108;
-            this.button1.Text = "Limpiar Campos";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnClear.Location = new System.Drawing.Point(546, 573);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(129, 36);
+            this.btnClear.TabIndex = 108;
+            this.btnClear.Text = "Limpiar Campos";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(386, 573);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 36);
-            this.button2.TabIndex = 107;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelar.Location = new System.Drawing.Point(386, 573);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(131, 36);
+            this.btnCancelar.TabIndex = 107;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -267,97 +267,98 @@
             this.button4.Text = "Guardar";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnEditRuc
             // 
-            this.button10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button10.Location = new System.Drawing.Point(661, 359);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(130, 36);
-            this.button10.TabIndex = 114;
-            this.button10.Text = "Editar Campo";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnEditRuc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEditRuc.Location = new System.Drawing.Point(661, 359);
+            this.btnEditRuc.Name = "btnEditRuc";
+            this.btnEditRuc.Size = new System.Drawing.Size(130, 36);
+            this.btnEditRuc.TabIndex = 114;
+            this.btnEditRuc.Text = "Editar Campo";
+            this.btnEditRuc.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnEditDireccion
             // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button9.Location = new System.Drawing.Point(661, 317);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(130, 36);
-            this.button9.TabIndex = 113;
-            this.button9.Text = "Editar Campo";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnEditDireccion.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEditDireccion.Location = new System.Drawing.Point(661, 317);
+            this.btnEditDireccion.Name = "btnEditDireccion";
+            this.btnEditDireccion.Size = new System.Drawing.Size(130, 36);
+            this.btnEditDireccion.TabIndex = 113;
+            this.btnEditDireccion.Text = "Editar Campo";
+            this.btnEditDireccion.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnEditMail
             // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button8.Location = new System.Drawing.Point(661, 275);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(130, 36);
-            this.button8.TabIndex = 112;
-            this.button8.Text = "Editar Campo";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnEditMail.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEditMail.Location = new System.Drawing.Point(661, 275);
+            this.btnEditMail.Name = "btnEditMail";
+            this.btnEditMail.Size = new System.Drawing.Size(130, 36);
+            this.btnEditMail.TabIndex = 112;
+            this.btnEditMail.Text = "Editar Campo";
+            this.btnEditMail.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnEditApellidos
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button6.Location = new System.Drawing.Point(661, 191);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 36);
-            this.button6.TabIndex = 110;
-            this.button6.Text = "Editar Campo";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnEditApellidos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEditApellidos.Location = new System.Drawing.Point(661, 191);
+            this.btnEditApellidos.Name = "btnEditApellidos";
+            this.btnEditApellidos.Size = new System.Drawing.Size(130, 36);
+            this.btnEditApellidos.TabIndex = 110;
+            this.btnEditApellidos.Text = "Editar Campo";
+            this.btnEditApellidos.UseVisualStyleBackColor = true;
+            this.btnEditApellidos.Click += new System.EventHandler(this.btnEditApellidos_Click);
             // 
-            // button5
+            // btnEditNombres
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.Location = new System.Drawing.Point(661, 233);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 36);
-            this.button5.TabIndex = 109;
-            this.button5.Text = "Editar Campo";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnEditNombres.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEditNombres.Location = new System.Drawing.Point(661, 233);
+            this.btnEditNombres.Name = "btnEditNombres";
+            this.btnEditNombres.Size = new System.Drawing.Size(130, 36);
+            this.btnEditNombres.TabIndex = 109;
+            this.btnEditNombres.Text = "Editar Campo";
+            this.btnEditNombres.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // btnEditCargo
             // 
-            this.button12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button12.Location = new System.Drawing.Point(661, 485);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(130, 36);
-            this.button12.TabIndex = 118;
-            this.button12.Text = "Editar Campo";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnEditCargo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEditCargo.Location = new System.Drawing.Point(661, 485);
+            this.btnEditCargo.Name = "btnEditCargo";
+            this.btnEditCargo.Size = new System.Drawing.Size(130, 36);
+            this.btnEditCargo.TabIndex = 118;
+            this.btnEditCargo.Text = "Editar Campo";
+            this.btnEditCargo.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btnEditTelefono
             // 
-            this.button13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button13.Location = new System.Drawing.Point(661, 443);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(130, 36);
-            this.button13.TabIndex = 117;
-            this.button13.Text = "Editar Campo";
-            this.button13.UseVisualStyleBackColor = true;
+            this.btnEditTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEditTelefono.Location = new System.Drawing.Point(661, 443);
+            this.btnEditTelefono.Name = "btnEditTelefono";
+            this.btnEditTelefono.Size = new System.Drawing.Size(130, 36);
+            this.btnEditTelefono.TabIndex = 117;
+            this.btnEditTelefono.Text = "Editar Campo";
+            this.btnEditTelefono.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // btnEditFechaInicio
             // 
-            this.button14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button14.Location = new System.Drawing.Point(661, 401);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(130, 36);
-            this.button14.TabIndex = 116;
-            this.button14.Text = "Editar Campo";
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnEditFechaInicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEditFechaInicio.Location = new System.Drawing.Point(661, 401);
+            this.btnEditFechaInicio.Name = "btnEditFechaInicio";
+            this.btnEditFechaInicio.Size = new System.Drawing.Size(130, 36);
+            this.btnEditFechaInicio.TabIndex = 116;
+            this.btnEditFechaInicio.Text = "Editar Campo";
+            this.btnEditFechaInicio.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cbbCargo
             // 
-            this.comboBox1.Enabled = false;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbbCargo.Enabled = false;
+            this.cbbCargo.FormattingEnabled = true;
+            this.cbbCargo.Items.AddRange(new object[] {
             "Gerente",
             "Secretario"});
-            this.comboBox1.Location = new System.Drawing.Point(286, 492);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(339, 24);
-            this.comboBox1.TabIndex = 119;
+            this.cbbCargo.Location = new System.Drawing.Point(286, 492);
+            this.cbbCargo.Name = "cbbCargo";
+            this.cbbCargo.Size = new System.Drawing.Size(339, 24);
+            this.cbbCargo.TabIndex = 119;
             // 
             // button3
             // 
@@ -375,22 +376,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(975, 670);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.cbbCargo);
+            this.Controls.Add(this.btnEditCargo);
+            this.Controls.Add(this.btnEditTelefono);
+            this.Controls.Add(this.btnEditFechaInicio);
+            this.Controls.Add(this.btnEditRuc);
+            this.Controls.Add(this.btnEditDireccion);
+            this.Controls.Add(this.btnEditMail);
+            this.Controls.Add(this.btnEditApellidos);
+            this.Controls.Add(this.btnEditNombres);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtFechaInicio);
+            this.Controls.Add(this.txtRUC);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtCedula);
@@ -415,9 +416,9 @@
 
         #endregion
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtFechaInicio;
+        private System.Windows.Forms.TextBox txtRUC;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtCedula;
@@ -432,18 +433,18 @@
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.Label lblNombres;
         private System.Windows.Forms.Label lblIntrucciones;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnEditRuc;
+        private System.Windows.Forms.Button btnEditDireccion;
+        private System.Windows.Forms.Button btnEditMail;
+        private System.Windows.Forms.Button btnEditApellidos;
+        private System.Windows.Forms.Button btnEditNombres;
+        private System.Windows.Forms.Button btnEditCargo;
+        private System.Windows.Forms.Button btnEditTelefono;
+        private System.Windows.Forms.Button btnEditFechaInicio;
+        private System.Windows.Forms.ComboBox cbbCargo;
         private System.Windows.Forms.Button button3;
     }
 }
