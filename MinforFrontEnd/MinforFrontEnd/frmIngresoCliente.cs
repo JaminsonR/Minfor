@@ -26,5 +26,10 @@ namespace MinforFrontEnd
         {
 
         }
+
+        private void FrmIngresoCliente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
     }
 }

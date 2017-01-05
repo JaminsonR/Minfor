@@ -51,5 +51,25 @@ namespace MinforFrontEnd
         {
             txtUsername.Enabled = true;
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text.Equals("Nacha") && txtPassword.Text.Equals("Players"))
+            {
+
+                this.Hide();
+                FrmVentanaPrincipalAdmin f = new FrmVentanaPrincipalAdmin();
+                f.ShowDialog();
+                this.Show();
+
+            }
+            txtUsername.ResetText();
+            txtPassword.ResetText();
+        }
+
+        private void FrmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
