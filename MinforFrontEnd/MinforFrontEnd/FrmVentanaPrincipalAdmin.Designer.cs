@@ -97,10 +97,10 @@
             this.txtTime.Location = new System.Drawing.Point(459, 84);
             this.txtTime.Multiline = true;
             this.txtTime.Name = "txtTime";
-            this.txtTime.Text = System.DateTime.Now.ToString("hh:mm:ss tt"); 
             this.txtTime.ReadOnly = true;
             this.txtTime.Size = new System.Drawing.Size(237, 38);
             this.txtTime.TabIndex = 28;
+            this.txtTime.Text = "11:30:53 PM";
             // 
             // txtNombreCliente
             // 
@@ -110,6 +110,7 @@
             this.txtNombreCliente.ReadOnly = true;
             this.txtNombreCliente.Size = new System.Drawing.Size(237, 38);
             this.txtNombreCliente.TabIndex = 23;
+            this.txtNombreCliente.Text = "All Mighty Dev";
             // 
             // label2
             // 
@@ -134,10 +135,10 @@
             this.txtDate.Location = new System.Drawing.Point(90, 84);
             this.txtDate.Multiline = true;
             this.txtDate.Name = "txtDate";
-            this.txtDate.Text = System.DateTime.Today.ToString("dd/MMM/yyyy");
             this.txtDate.ReadOnly = true;
             this.txtDate.Size = new System.Drawing.Size(237, 38);
             this.txtDate.TabIndex = 26;
+            this.txtDate.Text = "04/Jan/2017";
             this.txtDate.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblNombreCliente
@@ -166,6 +167,7 @@
             this.txtDireccionCliente.ReadOnly = true;
             this.txtDireccionCliente.Size = new System.Drawing.Size(237, 38);
             this.txtDireccionCliente.TabIndex = 24;
+            this.txtDireccionCliente.Text = "Developer";
             // 
             // groupBox2
             // 
@@ -367,13 +369,12 @@
             this.btnInventario.BackColor = System.Drawing.Color.Transparent;
             this.btnInventario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnInventario.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.btnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventario.Location = new System.Drawing.Point(70, 140);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(166, 53);
             this.btnInventario.TabIndex = 3;
             this.btnInventario.Text = "Mostrar Inventario";
-            this.btnInventario.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnInventario.UseVisualStyleBackColor = false;
             this.btnInventario.Click += new System.EventHandler(this.button4_Click);
             // 
